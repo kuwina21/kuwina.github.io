@@ -1,11 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'export',
-  // basePath and assetPrefix removed for local development
-  // Add them back only if deploying to a subdirectory (e.g., username.github.io/repo-name)
+  /* config options here */
+  output: "export",  // Tells Next.js to build static HTML files for GitHub Pages
+  basePath: "/mayores", // IMPORTANT: This must match your Repository Name exactly
   images: {
-    unoptimized: true,
+    unoptimized: true, // IMPORTANT: GitHub Pages does not support Image Optimization
   },
 };
 
