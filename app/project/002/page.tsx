@@ -45,7 +45,7 @@ export default function ProjectFall() {
                     className="absolute inset-0 z-0"
                 >
                     <Image
-                        src="/FALL_L.jpg"
+                        src={`${BASE_PATH}/FALL_L.jpg`}
                         alt="Fall: Rise to Glory Landscape"
                         fill
                         className="object-cover object-top"
@@ -104,7 +104,7 @@ export default function ProjectFall() {
                 <div className="max-w-5xl mx-auto">
                     <div className="relative bg-black p-2 rounded-xl shadow-2xl border-[6px] border-[#4e342e]">
                         <div className="relative aspect-video rounded-lg overflow-hidden">
-                            <Image src="/MainMenu.png" alt="Main Menu UI" fill className="object-cover" />
+                            <Image src={`${BASE_PATH}/MainMenu.png`} alt="Main Menu UI" fill className="object-cover" />
                         </div>
                     </div>
                     <p className="text-center text-white/60 font-mono text-xs mt-6 uppercase tracking-widest">
@@ -125,7 +125,7 @@ export default function ProjectFall() {
                         {/* Level 1 */}
                         <div className="group relative bg-[#4e342e] p-2 rounded-xl shadow-xl hover:-translate-y-2 transition-transform">
                             <div className="relative aspect-video overflow-hidden rounded-lg border-4 border-white/20">
-                                <Image src="/Level1.png" alt="Level 1: The Beginning" fill className="object-cover" />
+                                <Image src={`${BASE_PATH}/Level1.png`} alt="Level 1: The Beginning" fill className="object-cover" />
                             </div>
                             <div className="p-4">
                                 <h4 className="font-bold text-[#92cc4f] uppercase tracking-widest text-sm">Level 01: The Ascent</h4>
@@ -136,7 +136,7 @@ export default function ProjectFall() {
                         {/* Level 2 */}
                         <div className="group relative bg-[#4e342e] p-2 rounded-xl shadow-xl hover:-translate-y-2 transition-transform">
                             <div className="relative aspect-video overflow-hidden rounded-lg border-4 border-white/20">
-                                <Image src="/Level2.png" alt="Level 2: Moving Platforms" fill className="object-cover" />
+                                <Image src={`${BASE_PATH}/Level2.png`} alt="Level 2: Moving Platforms" fill className="object-cover" />
                             </div>
                             <div className="p-4">
                                 <h4 className="font-bold text-[#92cc4f] uppercase tracking-widest text-sm">Level 02: Momentum</h4>
@@ -147,7 +147,7 @@ export default function ProjectFall() {
                         {/* Level 3 */}
                         <div className="group relative bg-[#4e342e] p-2 rounded-xl shadow-xl hover:-translate-y-2 transition-transform">
                             <div className="relative aspect-video overflow-hidden rounded-lg border-4 border-white/20">
-                                <Image src="/Level3.png" alt="Level 3: The Trap Room" fill className="object-cover" />
+                                <Image src={`${BASE_PATH}/Level3.png`} alt="Level 3: The Trap Room" fill className="object-cover" />
                             </div>
                             <div className="p-4">
                                 <h4 className="font-bold text-[#92cc4f] uppercase tracking-widest text-sm">Level 03: The Gauntlet</h4>
@@ -158,7 +158,7 @@ export default function ProjectFall() {
                         {/* Level 4 */}
                         <div className="group relative bg-[#4e342e] p-2 rounded-xl shadow-xl hover:-translate-y-2 transition-transform">
                             <div className="relative aspect-video overflow-hidden rounded-lg border-4 border-white/20">
-                                <Image src="/Level4.png" alt="Level 4: Boss Room" fill className="object-cover" />
+                                <Image src={`${BASE_PATH}/Level4.png`} alt="Level 4: Boss Room" fill className="object-cover" />
                             </div>
                             <div className="p-4">
                                 <h4 className="font-bold text-[#92cc4f] uppercase tracking-widest text-sm">Level 04: Final Boss</h4>
@@ -177,7 +177,7 @@ export default function ProjectFall() {
                     <div className="w-full md:w-1/2">
                         <div className="bg-[#4e342e] border-[6px] border-[#92cc4f] rounded-2xl p-4 shadow-2xl rotate-[-2deg]">
                             <div className="relative aspect-video bg-[#bfa69b] rounded-lg overflow-hidden pixelated">
-                                <Image src="/FinalBoss.png" alt="Giant Stone Head Boss" fill className="object-contain" />
+                                <Image src={`${BASE_PATH}/FinalBoss.png`} alt="Giant Stone Head Boss" fill className="object-contain" />
                             </div>
                         </div>
                     </div>
@@ -233,7 +233,7 @@ export default function ProjectFall() {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         <div className="group relative bg-white p-2 rounded-lg shadow-xl hover:-translate-y-2 transition-transform duration-300">
                             <div className="relative aspect-[4/3] overflow-hidden rounded border border-gray-200">
-                                <Image src="/Certificate2.jpg" alt="Best Game Logo Award" fill className="object-cover" />
+                                <Image src={`${BASE_PATH}/Certificate2.jpg`} alt="Best Game Logo Award" fill className="object-cover" />
                             </div>
                             <div className="p-4 text-center">
                                 <h4 className="text-black font-black uppercase text-sm">Best Game Logo</h4>
@@ -243,7 +243,7 @@ export default function ProjectFall() {
 
                         <div className="group relative bg-white p-2 rounded-lg shadow-xl hover:-translate-y-2 transition-transform duration-300 md:-mt-8 z-10">
                             <div className="relative aspect-[4/3] overflow-hidden rounded border border-gray-200">
-                                <Image src="/Certificate3.jpg" alt="Best Game Project Award" fill className="object-cover" />
+                                <Image src={`${BASE_PATH}/Certificate3.jpg`} alt="Best Game Project Award" fill className="object-cover" />
                             </div>
                             <div className="p-4 text-center">
                                 <h4 className="text-black font-black uppercase text-sm">Best Game Project</h4>
@@ -254,7 +254,7 @@ export default function ProjectFall() {
 
                         <div className="group relative bg-white p-2 rounded-lg shadow-xl hover:-translate-y-2 transition-transform duration-300">
                             <div className="relative aspect-[4/3] overflow-hidden rounded border border-gray-200">
-                                <Image src="/Certificate1.jpg" alt="Participation Certificate" fill className="object-cover" />
+                                <Image src={`${BASE_PATH}/Certificate1.jpg`} alt="Participation Certificate" fill className="object-cover" />
                             </div>
                             <div className="p-4 text-center">
                                 <h4 className="text-black font-black uppercase text-sm">TimplaTEK Symposium</h4>
@@ -276,7 +276,7 @@ export default function ProjectFall() {
                         <div className="relative rotate-[-2deg] hover:rotate-0 transition-transform duration-500">
                             <div className="bg-white p-3 shadow-[10px_10px_0px_rgba(0,0,0,0.2)]">
                                 <div className="relative aspect-video">
-                                    <Image src="/Completion.jpg" alt="Team Completion" fill className="object-cover" />
+                                    <Image src={`${BASE_PATH}/Completion.jpg`} alt="Team Completion" fill className="object-cover" />
                                 </div>
                                 <p className="text-black font-mono text-[10px] uppercase text-center mt-3 tracking-widest text-opacity-50">FourHead Studio — Dec 2025</p>
                             </div>
@@ -286,7 +286,7 @@ export default function ProjectFall() {
                         <div className="relative rotate-[2deg] hover:rotate-0 transition-transform duration-500">
                             <div className="bg-white p-3 shadow-[10px_10px_0px_rgba(0,0,0,0.2)]">
                                 <div className="relative aspect-video">
-                                    <Image src="/OverallProject.jpg" alt="Project Exhibit" fill className="object-cover" />
+                                    <Image src={`${BASE_PATH}/OverallProject.jpg`} alt="Project Exhibit" fill className="object-cover" />
                                 </div>
                                 <p className="text-black font-mono text-[10px] uppercase text-center mt-3 tracking-widest text-opacity-50">The Exhibit Hall</p>
                             </div>
@@ -325,7 +325,7 @@ export default function ProjectFall() {
                 <div className="max-w-4xl mx-auto">
                     <div className="text-center mb-16">
                         <div className="w-24 h-24 mx-auto rounded-full border-4 border-[#92cc4f] mb-8 overflow-hidden relative bg-white shadow-lg">
-                            <Image src="/FALL_L.jpg" fill className="object-cover object-top" alt="Logo" />
+                            <Image src={`${BASE_PATH}/FALL_L.jpg`} fill className="object-cover object-top" alt="Logo" />
                         </div>
                         <h3 className="text-2xl font-black uppercase mb-2 tracking-widest text-[#92cc4f]">FourHead Studio</h3>
                         <p className="text-sm font-mono opacity-60 uppercase">STI College Naga — SY2526</p>
