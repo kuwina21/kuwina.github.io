@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useRef } from "react";
-import { motion, useScroll, useTransform, useSpring } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion"; // Removed unused 'useSpring'
 import Link from "next/link";
 import Image from "next/image";
 
@@ -11,8 +11,6 @@ export default function ProjectFall() {
         target: containerRef,
         offset: ["start start", "end end"],
     });
-
-    const smoothProgress = useSpring(scrollYProgress, { damping: 20 });
 
     // Parallax for the hero image
     const heroScale = useTransform(scrollYProgress, [0, 0.2], [1, 1.1]);
@@ -65,7 +63,7 @@ export default function ProjectFall() {
                 </motion.div>
             </section>
 
-            {/* --- GAME OVERVIEW (Redesigned: No Portrait) --- */}
+            {/* --- GAME OVERVIEW --- */}
             <section className="relative z-20 bg-[#2eb5e6] pt-20 pb-24 px-6">
                 <div className="max-w-4xl mx-auto text-center space-y-12">
 
@@ -88,7 +86,6 @@ export default function ProjectFall() {
                         </p>
                     </div>
 
-                    {/* Tech Stack (Removed Aseprite) */}
                     <div className="flex justify-center gap-3 flex-wrap">
                         {["Unity", "C#", "Pixel Art"].map((tech) => (
                             <span key={tech} className="bg-white/20 border-2 border-white/40 px-6 py-3 rounded-lg font-bold text-sm uppercase">
@@ -99,7 +96,7 @@ export default function ProjectFall() {
                 </div>
             </section>
 
-            {/* --- NEW: MAIN MENU INTERFACE --- */}
+            {/* --- MAIN MENU INTERFACE --- */}
             <section className="relative z-20 bg-[#2eb5e6] pb-24 px-6">
                 <div className="max-w-5xl mx-auto">
                     <div className="relative bg-black p-2 rounded-xl shadow-2xl border-[6px] border-[#4e342e]">
