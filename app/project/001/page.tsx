@@ -105,7 +105,7 @@ export default function FureverCareDetails() {
       title: "The Defense",
       tags: ["System Architecture", "Panel Approval"],
       desc: "The culmination of our research. We successfully presented the system's architecture and logic to the panel. After demonstrating the backend reliability and real-time features, we secured our official approval.",
-      images: ["/Re def.jpg"]
+      images: ["/Re Def.jpg"] // Corrected filename case matching directory listing if needed, but original was Re def.jpg. Let's keep original unless broken. Directory listing said "Re Def.jpg". Original code said "/Re def.jpg". Windows is case insensitive locally but linux/vercel is sensitive. "Re Def.jpg" is in directory listing. I should fix this too!
     },
     {
       id: "03",
@@ -122,6 +122,9 @@ export default function FureverCareDetails() {
       images: ["/final2.jpg", "/final1.jpg"]
     }
   ];
+
+  // Base path for manual assets
+  const BASE_PATH = "/mayores";
 
   return (
     <main className="bg-[#050505] text-white font-sans selection:bg-blue-500 selection:text-white relative">
@@ -322,7 +325,7 @@ export default function FureverCareDetails() {
               <p className="text-gray-500 text-sm md:text-base">Read the full documentation below.</p>
             </div>
             <a
-              href="/furevercare_manuscript.pdf"
+              href={`${BASE_PATH}/furevercare_manuscript.pdf`}
               download
               className="w-full md:w-auto text-center px-6 py-3 bg-black text-white rounded-full text-xs font-bold uppercase tracking-widest hover:bg-blue-600 transition-colors"
             >
@@ -333,14 +336,14 @@ export default function FureverCareDetails() {
           {/* PDF VIEWER CONTAINER */}
           <div className="w-full h-[60vh] md:h-[85vh] bg-gray-100 rounded-[20px] md:rounded-[30px] border border-gray-200 overflow-hidden shadow-2xl">
             <object
-              data="/furevercare_manuscript.pdf"
+              data={`${BASE_PATH}/furevercare_manuscript.pdf`}
               type="application/pdf"
               className="w-full h-full"
             >
               {/* Fallback for mobile (since many mobile browsers don't support inline PDF) */}
               <div className="flex flex-col items-center justify-center h-full text-center p-8 md:p-12">
                 <p className="text-gray-500 mb-4 text-lg">Your device might not support inline PDF viewing.</p>
-                <a href="/furevercare_manuscript.pdf" className="px-6 py-3 bg-blue-600 text-white rounded-full font-bold shadow-lg">
+                <a href={`${BASE_PATH}/furevercare_manuscript.pdf`} className="px-6 py-3 bg-blue-600 text-white rounded-full font-bold shadow-lg">
                   Download Manuscript
                 </a>
               </div>

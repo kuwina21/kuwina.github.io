@@ -16,6 +16,9 @@ export default function ProjectFall() {
     const heroScale = useTransform(scrollYProgress, [0, 0.2], [1, 1.1]);
     const heroY = useTransform(scrollYProgress, [0, 0.2], ["0%", "20%"]);
 
+    // Base path for static assets
+    const BASE_PATH = "/mayores";
+
     return (
         <div ref={containerRef} className="bg-[#2eb5e6] text-white min-h-[300vh] font-sans relative overflow-hidden selection:bg-[#92cc4f] selection:text-[#4e342e]">
 
@@ -209,9 +212,9 @@ export default function ProjectFall() {
                             loop
                             muted
                             playsInline
-                            poster="/FALL_L.jpg"
+                            poster={`${BASE_PATH}/FALL_L.jpg`}
                         >
-                            <source src="/fall.mp4" type="video/mp4" />
+                            <source src={`${BASE_PATH}/fall.mp4`} type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
                     </div>
@@ -301,16 +304,16 @@ export default function ProjectFall() {
                             <h3 className="text-4xl font-black uppercase tracking-tighter mb-2">Game Design Document</h3>
                             <p className="text-zinc-600 font-medium">Read the full technical specification and mechanics breakdown.</p>
                         </div>
-                        <a href="/GameDV.pdf" download className="bg-black text-white px-8 py-3 rounded-full font-bold uppercase tracking-widest text-xs hover:bg-[#92cc4f] hover:text-black transition-colors shadow-xl">
+                        <a href={`${BASE_PATH}/GameDV.pdf`} download className="bg-black text-white px-8 py-3 rounded-full font-bold uppercase tracking-widest text-xs hover:bg-[#92cc4f] hover:text-black transition-colors shadow-xl">
                             Download PDF ↓
                         </a>
                     </div>
 
                     <div className="w-full h-[80vh] bg-white rounded-xl overflow-hidden shadow-2xl border-4 border-white">
-                        <object data="/GameDV.pdf" type="application/pdf" className="w-full h-full">
+                        <object data={`${BASE_PATH}/GameDV.pdf`} type="application/pdf" className="w-full h-full">
                             <div className="flex items-center justify-center h-full flex-col gap-4 bg-zinc-100">
                                 <p className="text-zinc-500">Your browser does not support inline PDF viewing.</p>
-                                <a href="/GameDV.pdf" className="px-6 py-3 bg-black text-white rounded-full text-sm font-bold uppercase">Download the PDF</a>
+                                <a href={`${BASE_PATH}/GameDV.pdf`} className="px-6 py-3 bg-black text-white rounded-full text-sm font-bold uppercase">Download the PDF</a>
                             </div>
                         </object>
                     </div>
